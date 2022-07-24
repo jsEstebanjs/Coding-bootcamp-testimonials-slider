@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: contain;
+}
+$Dark-Blue: hsl(240, 38%, 20%);
+$Grayish-Blue: hsl(240, 18%, 77%);
+body{
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    background-image: url(./coding-bootcamp-testimonials-slider-master/images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    width: 100%;
+    height: max-content;
+    .main-section{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr;
+        width: 100%;
+        height: 100vh;
+        background-image: url(./coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        align-items: center;
+        .section-info{
+            background-image: url(./coding-bootcamp-testimonials-slider-master/images/pattern-quotes.svg);
+            height: max-content;
+            background-repeat: no-repeat;
+            background-size: auto;
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+            color: $Dark-Blue;
+            align-items: center;
+            padding: 40px;
+            background-position: center top;
+            p{
+                font-size: 28px;
+            }
+            .section-info-names{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap:10px;
+                margin-top: 20px;
+                .name{
+                    color: $Dark-Blue;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .info{
+                    font-size: 16px;
+                    color: $Grayish-Blue;
+                }
+            }
+
+        }
+
+
+    }
+
+
+}
+
+//hasta700 se ve bien
