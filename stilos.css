@@ -23,10 +23,6 @@ body .main-section {
   grid-row: 1fr;
   width: 100%;
   height: 100vh;
-  background-image: url(./coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
   align-items: center;
 }
 body .main-section .section-info {
@@ -35,7 +31,7 @@ body .main-section .section-info {
   height: -moz-max-content;
   height: max-content;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 20% 20%;
   display: flex;
   flex-direction: column;
   font-weight: 300;
@@ -63,29 +59,43 @@ body .main-section .section-info .section-info-names .info {
   font-size: 16px;
   color: hsl(240deg, 18%, 77%);
 }
-body .main-section figure {
+body .main-section .section-img {
+  flex-direction: column;
   display: flex;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100%;
-}
-body .main-section figure img {
   width: 100%;
   height: 100%;
-  max-width: 540px;
-  max-height: 540px;
-  border-radius: 10px;
+  background-image: url(./coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
 }
-body .main-section figure div {
+body .main-section .section-img div {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+body .main-section .section-img div img {
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body .main-section .section-img div div {
   display: flex;
   flex-direction: row;
-  width: 100px;
-  height: 50px;
+  max-width: 100px;
+  max-height: 50px;
   position: absolute;
-  bottom: 6%;
+  bottom: -20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 50px;
 }
-body .main-section figure div .button-left {
+body .main-section .section-img div div .button-left {
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -98,7 +108,7 @@ body .main-section figure div .button-left {
   border-radius: 50px 0 0 50px;
   background-color: white;
 }
-body .main-section figure div .button-rigth {
+body .main-section .section-img div div .button-rigth {
   background-color: white;
   cursor: pointer;
   width: 50px;
@@ -111,9 +121,9 @@ body .main-section figure div .button-rigth {
   border: none;
   border-radius: 0 50px 50px 0;
 }
-body .main-section figure div .button-left:hover {
+body .main-section .section-img div div .button-left:hover {
   background-color: hsl(240deg, 18%, 77%);
 }
-body .main-section figure div .button-rigth:hover {
+body .main-section .section-img div div .button-rigth:hover {
   background-color: hsl(240deg, 18%, 77%);
 }
