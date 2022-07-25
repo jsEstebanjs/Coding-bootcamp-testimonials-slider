@@ -3,10 +3,12 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     background-image: none;
+    align-items: flex-start;
   }
   body .main-section .section-info {
     grid-area: 2/1;
     padding: 10px;
+    margin-top: 20px;
   }
   body .main-section .section-info p {
     font-size: 18px;
